@@ -20,6 +20,7 @@ public class MoveAround : MonoBehaviour {
 	public static bool gotHit = false ;
 	private float[] backup = {800.0f, 0.01f, 0.01f} ;
 
+<<<<<<< HEAD
 	void Start() {
 		HealthControl.LIVES = 3;
 	}
@@ -39,11 +40,31 @@ public class MoveAround : MonoBehaviour {
 		{
 			GameObject bullit = Instantiate(bullitPrefab.gameObject, GameObject.Find("WspawnPoint").transform.position, Quaternion.identity) as GameObject;
 			bullit.gameObject.tag = "wormProjectile" ;
+=======
+	void Update () {
+		CharacterController controller = GetComponent<CharacterController> ();
+
+		// Rotate around y - axis
+		transform.Rotate (0, Input.GetAxis ("Horizontal") * rotateSpeed, 0);
+
+		// Move forward / backward
+		Vector3 forward = transform.TransformDirection(Vector3.forward) ;
+		float curSpeed = speed * Input.GetAxis ("Vertical");
+		controller.SimpleMove (forward * curSpeed);
+
+		if(Input.GetButtonDown("Jump"))
+		{
+			GameObject bullit = Instantiate(bullitPrefab.gameObject, GameObject.Find("spawnPoint").transform.position, Quaternion.identity) as GameObject;
+>>>>>>> Start
 			bullit.rigidbody.AddForce(transform.forward * 2000) ;
 		}
 	}
 
+<<<<<<< HEAD
 	/*void OnControllerColliderHit(ControllerColliderHit hit) {
+=======
+	void OnControllerColliderHit(ControllerColliderHit hit) {
+>>>>>>> Start
 		if (hit.gameObject.tag == "fallout") {
 			dead = true ;
 
@@ -51,10 +72,15 @@ public class MoveAround : MonoBehaviour {
 		}
 
 		if (hit.gameObject.tag == "enemyProjectile") {
+<<<<<<< HEAD
 			//gotHit = true ;
 			HealthControl.LIVES -= 1 ;
 
 			Destroy(hit.gameObject) ;
+		}
+
+		if (HealthControl.LIVES == 0) {
+			Application.LoadLevel(2) ;
 		}
 	}*/
 
@@ -72,6 +98,16 @@ public class MoveAround : MonoBehaviour {
 			
 			Destroy(hit.gameObject) ;
 		}
+<<<<<<< HEAD:Assets/Custom/Game/MoveAround.cs
+=======
+		
+		if (HealthControl.LIVES == 0) {
+			Application.LoadLevel(2) ;
+=======
+			gotHit = true ;
+>>>>>>> Start
+		}
+>>>>>>> Start:Assets/MoveAround.cs
 	}
 
 	void LateUpdate() {
@@ -81,7 +117,11 @@ public class MoveAround : MonoBehaviour {
 			dead = false ;
 		}
 
+<<<<<<< HEAD
 		/*if (gotHit) {
+=======
+		if (gotHit) {
+>>>>>>> Start
 			if(tumbleSpeed < 1)
 			{
 				tumbleSpeed = backup[0] ;
@@ -94,6 +134,10 @@ public class MoveAround : MonoBehaviour {
 				tumbleSpeed = tumbleSpeed - decreaseTime ;
 				decreaseTime += decayTime ;
 			}
+<<<<<<< HEAD
 		}*/
+=======
+		}
+>>>>>>> Start
 	}
 }
