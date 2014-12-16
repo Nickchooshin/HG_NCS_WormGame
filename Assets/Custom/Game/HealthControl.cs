@@ -21,7 +21,7 @@ public class HealthControl : MonoBehaviour {
 			break ;
 			
 		case 0 :
-			// gameover script here
+            Application.LoadLevel(2);
 			break ;
 		}
 	}

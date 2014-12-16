@@ -76,10 +76,6 @@ public class MoveAround : MonoBehaviour {
 			
 			Destroy(hit.gameObject) ;
 		}
-		
-		if (HealthControl.LIVES == 0) {
-			Application.LoadLevel(2) ;
-		}
 	}
 
 	void LateUpdate() {
