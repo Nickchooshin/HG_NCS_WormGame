@@ -8,4 +8,11 @@ public class killMeOverTime : MonoBehaviour {
 	void Update () {
 		Destroy (gameObject, lifeTime);
 	}
+
+    void OnCollisionEnter(Collision col)
+    {
+        if( (gameObject.tag=="wormProjectile" && col.gameObject.tag=="enemyProjectile") ||
+            (gameObject.tag=="enemyProjectile" && col.gameObject.tag=="wormProjectile") )
+            Destroy(gameObject);
+    }
 }
