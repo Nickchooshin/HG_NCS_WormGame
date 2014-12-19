@@ -1,0 +1,11 @@
+C:\Users\Public\Documents\Unity Projects\HG_NCS_WormGame\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+C:\Users\Public\Documents\Unity Projects\HG_NCS_WormGame\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+C:\Users\Public\Documents\Unity Projects\HG_NCS_WormGame\Temp\UnityVS_bin\Debug\Assembly-UnityScript-firstpass.dll
+C:\Users\Public\Documents\Unity Projects\HG_NCS_WormGame\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Users\Public\Documents\Unity Projects\HG_NCS_WormGame\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Users\Public\Documents\Unity Projects\HG_NCS_WormGame\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Public\Documents\Unity Projects\HG_NCS_WormGame\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Users\Public\Documents\Unity Projects\HG_NCS_WormGame\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Users\Public\Documents\Unity Projects\HG_NCS_WormGame\obj\Debug\UnityVS.HG_NCS_WormGame.CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Public\Documents\Unity Projects\HG_NCS_WormGame\obj\Debug\Assembly-CSharp.dll
+C:\Users\Public\Documents\Unity Projects\HG_NCS_WormGame\obj\Debug\Assembly-CSharp.pdb

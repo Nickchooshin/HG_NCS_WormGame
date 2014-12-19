@@ -4,6 +4,7 @@ using System.Collections;
 public abstract class ShootPattern : MonoBehaviour {
 
     private static bool Init = false;
+    protected static Transform ShootPosition = null;
     protected static Transform LookAtTarget = null;
     protected static Transform bullitPrefab = null;
 
@@ -22,6 +23,7 @@ public abstract class ShootPattern : MonoBehaviour {
         if (!Init)
         {
             ShootObjectManager shootObject = gameObject.GetComponent<ShootObjectManager>();
+            ShootPosition = shootObject.ShootPosition;
             LookAtTarget = shootObject.LookAtTarget;
             bullitPrefab = shootObject.bullitPrefab;
 

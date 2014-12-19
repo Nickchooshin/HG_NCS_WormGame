@@ -11,7 +11,7 @@ public class Boss : MonoBehaviour {
     private ShootPattern[] shootPatternList;
 
 	private int patternState = 0 ;
-	public float cooldown = 3.5f ;
+	public float cooldown = 2.0f ;
 
 	int bullitType = 0 ;
 
@@ -22,9 +22,10 @@ public class Boss : MonoBehaviour {
         StartCoroutine("ShootDelay");
 	}
 
-	void OnGUI() {
-		GUI.Box (new Rect (Screen.width * 0.01f, Screen.height * 0.01f, Screen.width * 0.2f, Screen.height * 0.05f), "Boss Life : " + Life);
-	}
+    void OnGUI()
+    {
+        GUI.Box(new Rect(Screen.width * 0.45f, Screen.height * 0.02f, Screen.width * 0.1f, Screen.height * 0.05f), "Boss Life") ;
+    }
 
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.tag == "wormProjectile") {
